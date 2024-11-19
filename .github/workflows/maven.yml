@@ -29,3 +29,8 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml -Dmaven.test.skip=true
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: zip
+        path: elasticsearch-analysis-morphology-8.15.0.zip
