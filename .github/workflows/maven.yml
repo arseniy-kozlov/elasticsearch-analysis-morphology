@@ -33,4 +33,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: zip
-        path: releases
+        path: target/releases
+        # /home/runner/work/elasticsearch-analysis-morphology/elasticsearch-analysis-morphology/
